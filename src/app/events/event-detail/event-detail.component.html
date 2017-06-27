@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="{{selectedEvent?.event_image}}" alt="" class="img-responsive">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>{{selectedEvent?.event_name}}</h1>
+      <p>{{selectedEvent?.event_description}}</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="pull-right" style="padding-top: 55px; padding-right: 15px;">
+        <button class="btn btn-primary btn-sm">Edit</button>
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<pdg-gift-list (giftSelected)="selectedGift = $event" [selectedEvent]="selectedEvent"></pdg-gift-list>

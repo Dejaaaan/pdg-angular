@@ -1,0 +1,34 @@
+<a class="list-group-item clearfix" data-toggle="collapse" href="#{{gift.id}}">
+  <h4 class="list-group-item-heading">
+    <div>
+      <div class="col-sm-2 text-center">
+          <img class="img-respinsive"
+               src="{{gift.gift_images}}"
+               style="max-height: 50px;"/>
+      </div>
+      <div class="col-sm-6">
+        <p>{{gift.gift_name}}</p>
+        <small>{{gift.gift_price | currency:'USD':true:'1.2-2'}}</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="pull-right" style="padding-top: 10px;">
+        <button class="btn btn-primary btn-sm">Edit</button>
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+  </h4>
+
+</a>
+<div id="{{gift.id}}" class="panel-body collapse clearfix">
+  <span class="pull-left">
+    <img class="img-respinsive"
+         src="{{gift.gift_images}}"
+         style="max-height: 50px;"/>
+  </span>
+  <span class="pull-right">
+    <p class="list-group-item-text">
+      {{gift.gift_description}}
+    </p>
+  </span>
+</div>

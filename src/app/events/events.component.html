@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-3">
+    <pdg-event-list (eventSelected)="selectedEvent = $event"></pdg-event-list>
+  </div>
+  <div class="col-md-6">
+    <pdg-event-detail *ngIf="selectedEvent != null" [selectedEvent]="selectedEvent"></pdg-event-detail>
+  </div>
+</div>

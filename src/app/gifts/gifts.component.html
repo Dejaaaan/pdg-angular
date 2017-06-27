@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-5">
+    <pdg-gift-list (giftSelected)="selectedGift = $event"></pdg-gift-list>
+  </div>
+  <div class="col-md-7">
+    <pdg-gift-detail [selectedGift]="selectedGift"></pdg-gift-detail>
+  </div>
+</div>

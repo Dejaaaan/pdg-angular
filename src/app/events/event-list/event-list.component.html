@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h1 class="panel-title pull-left" style="padding-top: 7px;">Your Perfect Days</h1>
+    <a class="btn btn-success btn-sm pull-right">New</a>
+  </div>
+  <div class="panel-body hidden">
+    Panel content
+  </div>
+
+  <ul class="list-group">
+    <pdg-event-item *ngFor="let event of events" [event]="event" (click)="onSelected(event)">...</pdg-event-item>
+  </ul>
+</div>
+
